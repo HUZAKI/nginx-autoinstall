@@ -4,8 +4,8 @@ Compile and install NGINX from source with optional features, modules and patche
 
 ## Compatibility
 
-- Debian 9 and later
-- Ubuntu 16.04 and later
+- Debian 10 and later
+- Ubuntu 18.04 and later
 
 The script might work on ARM-based architectures, but it's only being regularly tested against x86_64 with [GitHub Actions](https://github.com/angristan/nginx-autoinstall/actions/workflows/build.yml).
 
@@ -20,7 +20,7 @@ The script might work on ARM-based architectures, but it's only being regularly 
 
 ### Optional modules/features
 
-- [LibreSSL from source](http://www.libressl.org/) (CHACHA20, ALPN for HTTP/2, X25519, P-521)
+- [LibreSSL from source](http://www.libressl.org/) (CHACHA20, ALPN for HTTP/2, HTTP/3, X25519, P-521)
 - [OpenSSL from source](https://www.openssl.org/) (TLS 1.3, CHACHA20, ALPN for HTTP/2, X25519, P-521)
 - [Cloudflare's patch for HTTP/3](https://blog.cloudflare.com/experiment-with-http-3-using-nginx-and-quiche/) with [Quiche](https://github.com/cloudflare/quiche) and [BoringSSL](https://github.com/google/boringssl).
 - [Cloudflare's TLS Dynamic Record Resizing patch](https://blog.cloudflare.com/optimizing-tls-over-tcp-to-reduce-latency/) maintained by [nginx-modules](https://github.com/nginx-modules/ngx_http_tls_dyn_size).
